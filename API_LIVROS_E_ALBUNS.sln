@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{DCFD1B97-C7F8-4DE3-9B29-8B747822DBCB}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{43224899-1CE2-4E54-B16B-8ECE26DB2DDC}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{081D34C5-666A-488B-BD96-9E3C6FD1AD33}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{A7473F61-EA68-4B65-A639-5C06459A1F55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{72C90AB1-12F0-4E35-9ED6-AF92219F93A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{72C90AB1-12F0-4E35-9ED6-AF92219F93A7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Businnes", "Businnes", "{65F0F600-3740-4D5F-B7E4-4787C6741758}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Businnes", "Businnes\Businnes.csproj", "{C2E41B73-AD87-4E4B-BC31-F4488C2F94CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Businnes", "Businnes\Businnes.csproj", "{C2E41B73-AD87-4E4B-BC31-F4488C2F94CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_book_Album", "API_book_Album\API_book_Album.csproj", "{783021E3-E64A-40F2-A211-AA7617A9BE6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API_book_Album", "API_book_Album\API_book_Album.csproj", "{783021E3-E64A-40F2-A211-AA7617A9BE6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{77B7D4CC-1753-40A5-A67E-457F42FB5646}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{AAB9AA33-0718-4DA0-8EEE-F783C89A5130}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DCFD1B97-C7F8-4DE3-9B29-8B747822DBCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DCFD1B97-C7F8-4DE3-9B29-8B747822DBCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DCFD1B97-C7F8-4DE3-9B29-8B747822DBCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DCFD1B97-C7F8-4DE3-9B29-8B747822DBCB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{72C90AB1-12F0-4E35-9ED6-AF92219F93A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{72C90AB1-12F0-4E35-9ED6-AF92219F93A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72C90AB1-12F0-4E35-9ED6-AF92219F93A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,15 +37,19 @@ Global
 		{783021E3-E64A-40F2-A211-AA7617A9BE6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{783021E3-E64A-40F2-A211-AA7617A9BE6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{783021E3-E64A-40F2-A211-AA7617A9BE6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB9AA33-0718-4DA0-8EEE-F783C89A5130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB9AA33-0718-4DA0-8EEE-F783C89A5130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB9AA33-0718-4DA0-8EEE-F783C89A5130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB9AA33-0718-4DA0-8EEE-F783C89A5130}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{DCFD1B97-C7F8-4DE3-9B29-8B747822DBCB} = {43224899-1CE2-4E54-B16B-8ECE26DB2DDC}
 		{72C90AB1-12F0-4E35-9ED6-AF92219F93A7} = {081D34C5-666A-488B-BD96-9E3C6FD1AD33}
 		{C2E41B73-AD87-4E4B-BC31-F4488C2F94CA} = {65F0F600-3740-4D5F-B7E4-4787C6741758}
 		{783021E3-E64A-40F2-A211-AA7617A9BE6E} = {A7473F61-EA68-4B65-A639-5C06459A1F55}
+		{AAB9AA33-0718-4DA0-8EEE-F783C89A5130} = {77B7D4CC-1753-40A5-A67E-457F42FB5646}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FDB44AD7-902B-4769-81AB-673EB9733BCA}

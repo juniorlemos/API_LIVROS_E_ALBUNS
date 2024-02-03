@@ -1,24 +1,22 @@
 using Microsoft.AspNetCore.Mvc;
+using Services.Interface;
 
 namespace API_book_Album.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    [Route("api/[controller]")]
+    public class BookController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
+        private readonly IService _service;
+        public BookController(IService service)
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+            _service = service;
+        }
+        [HttpGet]
+        public IActionResult Get()
         {
-            _logger = logger;
+            return Ok(_service.GetAll());
         }
 
-       
-        
     }
 }
