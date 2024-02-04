@@ -1,7 +1,7 @@
+using Businnes;
 using Microsoft.EntityFrameworkCore;
 using Repository.Context;
-using Repository.Implementation;
-using Repository.Interface;
+using Repository.GenericRepository;
 using Services.Implemetation;
 using Services.Interface;
 
@@ -18,8 +18,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseMySql(
 );
 
 
-builder.Services.AddScoped<IService, BookService>();
-builder.Services.AddScoped<IRepository, BookRepository>();
+builder.Services.AddScoped <IBasicService<Book>,BookService>();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
