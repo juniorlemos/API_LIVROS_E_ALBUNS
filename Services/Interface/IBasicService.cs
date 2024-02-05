@@ -11,8 +11,8 @@ namespace Services.Interface
     {
         Task<IEnumerable<T>> Get();
         Task<T> GetId(long id);
-        Task<T> Create(T book);
-        Task<T> Update(T book);
+        Task<T> Create(T entity);
+        Task<T> Update(T entity);
         Task Delete(long id);
     }
 }
