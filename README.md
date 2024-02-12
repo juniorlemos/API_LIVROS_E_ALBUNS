@@ -1,3 +1,3 @@
-# API_LIVROS_E_ALBUNS - EM CONSTRUÇÃO
+# API_LIVROS
 
-API de livros e albuns musicais para exercitar construções de apis e algumas tecnologias
+API de livros para exercitar construções de apis e algumas tecnologias
