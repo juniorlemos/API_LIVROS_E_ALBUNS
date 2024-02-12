@@ -49,8 +49,8 @@ namespace API_book_Album.Controllers
             {
                 return BadRequest(ModelState);
             }
-            var createdBook = await _bookService.Create(book);
 
+            var createdBook = await _bookService.Create(book);
 
             if (createdBook == null)
             {
